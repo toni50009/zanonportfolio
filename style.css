@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    height: 100%;
     font-family: 'Open Sans', sans-serif;
     background: linear-gradient(to bottom, #a8e9f0, #001f3f);
     color: white;
@@ -22,9 +23,7 @@ body {
 
   .title {
     font-family: 'MedievalSharp', cursive;
-    text-decoration: underline;
-    color:#040503;
-    text-decoration-color: #03066e;
+    color: black;
     font-size: 3rem;
     text-align: center;
     margin-top: 2rem;
@@ -33,18 +32,22 @@ body {
   .icons {
     text-align: center;
     margin: 1rem 0;
+    padding: 2rem;
   }
 
-  .icons a {
+  .icon{
+    display: inline-block;
     margin: 0 1rem;
-    font-size: 2rem;
-    color: #00cfc1; /* azul piscina */
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: black;
+  }
+
+  .icon:hover{
+    transform: scale(1.2);
     transition: transform 0.3s ease;
   }
-
-  .icons a:hover {
-    transform: scale(1.2);
-  }
+  
 
   h2 {
     text-align: center;
@@ -58,7 +61,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    padding: 2rem;
+    padding: 3rem;
   }
 
   .project {
@@ -72,7 +75,7 @@ body {
   }
 
   .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
   }
 
   .project img {
@@ -85,11 +88,11 @@ body {
     padding: 1rem;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.05);
+    height: 100%;
   }
 
   .project-info h3 {
     margin: 0.5rem 0;
-    color: #ff4c4c; /* um pouco de vermelho */
   }
 
   .project-info p {
