@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #a8e9f0, #001f3f);
+    color: white;
+  }
+
+  header {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .title {
+    font-family: 'MedievalSharp', cursive;
+    text-decoration: underline;
+    color:#040503;
+    text-decoration-color: #03066e;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .icons {
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .icons a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: #00cfc1; /* azul piscina */
+    transition: transform 0.3s ease;
+  }
+
+  .icons a:hover {
+    transform: scale(1.2);
+  }
+
+  h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 3rem;
+    font-family: 'MedievalSharp', cursive;
+  }
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .project {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 3px solid #f2c94c;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .project:hover {
+    transform: scale(1.05);
+  }
+
+  .project img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .project-info {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .project-info h3 {
+    margin: 0.5rem 0;
+    color: #ff4c4c; /* um pouco de vermelho */
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+    color: #b8f5b1; /* um pouco de verde */
+  }
