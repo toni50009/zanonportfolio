@@ -1,11 +1,14 @@
 :root {
-  --cor-fundo: #001f3f;
-  --cor-primaria: #ffffff;
-  --cor-secundaria: #0f0582;
-  --cor-contraste: #f2c94c;
+  --cor-fundo: #000000;     
+  --cor-texto: #f0f0f0;        
+  --cor-secundaria: #2e2e2e;  
 
-  --fonte-titulo: Verdana, Geneva, Tahoma, sans-serif;
-  --fonte-texto: 'Open Sans', sans-serif;
+
+  --cor-destaque: #1a2a6c;     
+  --cor-contraste: #ffd700;   
+
+
+  --cor-borda: #444;          
 }
 
 html {
@@ -15,15 +18,15 @@ html {
 body {
   margin: 0;
   height: 100%;
-  font-family: var(--fonte-texto);
+  font-family: 'Open Sans', sans-serif;
   background-color: var(--cor-fundo);
-  color: var(--cor-primaria);
+  color: var(--cor-texto);
   scroll-behavior: smooth;
 }
 
 
 .logo{
-  font-family: var(--fonte-titulo);
+  text-shadow: 0 0 5px rgba(201, 230, 13, 0.399), 0 0 10px rgba(163, 217, 16, 0.393), 0 0 15px rgba(220, 235, 15, 0.421);
   font-size: 2rem;
 }
 
@@ -38,20 +41,21 @@ body {
 }
 
 h2, .title {
-  font-family: var(--fonte-titulo);
   text-align: center;
-  color: var(--cor-contraste);
+  color: var(--cor-texto);
   margin-top: 3rem;
 }
 
+.title{
+  background-color: var(--cor-secundaria);
+}
   
   header {
-    background-color: rgba(3, 3, 127, 0.331);
+    background-color: black;
     padding: 1rem;
     width: 100%;
     position: fixed;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     top: 0;
     z-index: 20;
@@ -71,7 +75,6 @@ nav{
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   height: 30px;
   padding: 1rem;
 }
@@ -94,18 +97,11 @@ nav{
   .title {
     display: flex;
     justify-content: center;
-    width: fit-content;
-    margin: 6rem auto 0 auto;
+    width: 100%;
+    margin: 1.5rem auto 0 auto;
     font-size: 3.5rem;
     transition: color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
-    text-shadow: 0 0 5px rgba(201, 230, 13, 0.399), 0 0 10px rgba(163, 217, 16, 0.393), 0 0 15px rgba(220, 235, 15, 0.421);
-  }
-
-
-  .title:hover {
-    color: var(--cor-primaria);
-    transform: scale(1.1);
   }
 
   .icons {
@@ -132,8 +128,8 @@ nav{
     text-align: center;
     color: var(--cor-contraste);
     margin-top: 3rem;
-    font-family: var(--fonte-titulo);
-    text-shadow: 0 0 5px rgba(201, 230, 13, 0.399), 0 0 10px rgba(163, 217, 16, 0.393), 0 0 15px rgba(220, 235, 15, 0.421);
+    font-family: var(--fonte-texto);
+
   }
 
   .projects {
@@ -179,7 +175,7 @@ nav{
 
   .project-info p {
     font-size: 0.9rem;
-    color: #b8f5b1;
+    color: var(--cor-primaria);
   }
 
   section.sobre, section.contato, .botaovoltar {
