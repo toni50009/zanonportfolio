@@ -76,9 +76,17 @@ nav{
   padding: 1rem;
 }
 
+.objnav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1.5rem;
+}
+
 
 .objnav:hover{
   background-color: var(--cor-contraste);
+  color: var(--cor-secundaria);
 }
 
 
