@@ -4,7 +4,7 @@
   --cor-secundaria: #0f0582;
   --cor-contraste: #f2c94c;
 
-  --fonte-titulo: 'MedievalSharp', cursive;
+  --fonte-titulo: Verdana, Geneva, Tahoma, sans-serif;
   --fonte-texto: 'Open Sans', sans-serif;
 }
 
@@ -132,7 +132,7 @@ nav{
     text-align: center;
     color: var(--cor-contraste);
     margin-top: 3rem;
-    font-family: 'MedievalSharp', cursive;
+    font-family: var(--fonte-titulo);
     text-shadow: 0 0 5px rgba(201, 230, 13, 0.399), 0 0 10px rgba(163, 217, 16, 0.393), 0 0 15px rgba(220, 235, 15, 0.421);
   }
 
