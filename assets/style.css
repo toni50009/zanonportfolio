@@ -21,9 +21,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.title, h2 {
-  font-family: var(--fonte-titulo);
-}
 
 .logo{
   font-family: var(--fonte-titulo);
@@ -41,6 +38,7 @@ body {
 }
 
 h2, .title {
+  font-family: var(--fonte-titulo);
   text-align: center;
   color: var(--cor-contraste);
   margin-top: 3rem;
@@ -67,17 +65,38 @@ h2, .title {
     font-weight: bold;
   }
 
+
+nav{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 30px;
+  padding: 1rem;
+}
+
+
+.objnav:hover{
+  background-color: var(--cor-contraste);
+}
+
+
+
   .title {
-    text-align: center;
-    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 6rem auto 0 auto;
     font-size: 3.5rem;
     transition: color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
+    text-shadow: 0 0 5px rgba(201, 230, 13, 0.399), 0 0 10px rgba(163, 217, 16, 0.393), 0 0 15px rgba(220, 235, 15, 0.421);
   }
 
 
   .title:hover {
-    color: var(--cor-contraste);
+    color: var(--cor-primaria);
     transform: scale(1.1);
   }
 
@@ -106,6 +125,7 @@ h2, .title {
     color: var(--cor-contraste);
     margin-top: 3rem;
     font-family: 'MedievalSharp', cursive;
+    text-shadow: 0 0 5px rgba(201, 230, 13, 0.399), 0 0 10px rgba(163, 217, 16, 0.393), 0 0 15px rgba(220, 235, 15, 0.421);
   }
 
   .projects {
