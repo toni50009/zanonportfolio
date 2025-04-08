@@ -1,108 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zanon DEV</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Open+Sans&display=swap" rel="stylesheet">
+  <title>ZanonDev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css">
-  <link rel="icon" type="image/png" href="/img/icone.png">
+  <link rel="icon" href="/img/icone.png" type="image/png">
 </head>
 <body>
-  <header>
-    <div class="logo"><a href="#topo">ZDEV</a></div>
+  
+  <header class="bg-dark text-white py-3">
     <nav>
-      <a href="#topo" class="objnav">Home</a>
-      <a href="#projects" class="objnav">Projetos</a>
-      <a href="#sobre" class="objnav">Sobre</a>
-      <a href="#contato" class="objnav">Contato</a>
+      <div class="container d-flex justify-content-between align-items-center">
+        <a href="#" class="text-white text-decoration-none fs-4">
+        <span class="text-warning">Z</span>anon<span class="text-warning">D</span>ev</a>
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+          <li class="nav-item"><a href="#sobre" class="nav-link text-white">Sobre</a></li>
+          <li class="nav-item"><a href="#projetos" class="nav-link text-white">Projetos</a></li>
+          <li class="nav-item"><a href="#contato" class="nav-link text-white">Contato</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <div class="placeholder" id="topo" >
-  </div>
-
-  <div class="title">
-    <h2>Zanon Dev</h2>
-  </div>
-
-  <div class="placeholder" id="projects">
-  </div>
-
-  <h2>Projetos</h2>
-
-  <section class="projects">
-    <div class="project">
-      <img src="/img/browsertales.png" alt="Projeto 1">
-      <div class="project-info disabled">
-        <h3>Browser Tales</h3>
-        <p>Em breve...</p>
+  <div class="main container-fluid px-0 d-flex flex-column justify-content-center text-center" id="home">
+    <section class="intro d-flex flex-column justify-content-center bg-dark text-white p-5 rounded-0 shadow-lg">
+      <h1 class="hero-title text-warning">ZanonDev</h1>
+      <h2 class="hero-subtitle">Desenvolvedor Web</h2>
+    </section>
+    
+    <section class="sobre bg-black text-white p-5 rounded-0 shadow-lg" id="sobre">
+      <h2 class="mt-5 mb-4 text-warning">Sobre mim</h2>
+      <p class="lead">Olá! Meu nome é Antonio sou um desenvolvedor web pronto para novos desafios!</p>
+      <p class="lead">Nos meus projetos, utilizo as tecnologias:</p>
+      <ul class="list-unstyled">
+        <li><i class="bi bi-check-circle-fill text-warning"></i> HTML</li>
+        <li><i class="bi bi-check-circle-fill text-warning"></i> CSS</li>
+        <li><i class="bi bi-check-circle-fill text-warning"></i> JavaScript</li>
+        <li><i class="bi bi-check-circle-fill text-warning"></i> PHP</li>
+        <li><i class="bi bi-check-circle-fill text-warning"></i> MySQL</li>
+        <li><i class="bi bi-check-circle-fill text-warning"></i> Bootstrap</li>
+      </ul>
+    </section>
+  
+    <section id="projetos" class="projetos bg-black text-white p-5 rounded-0 shadow-lg">
+      <h2 class="mt-5 mb-4 text-warning">Projetos</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white shadow-sm border border-warning">
+            <img src="/img/sharplingua.png" class="card-img-top" alt="SharpLingua">
+            <div class="card-body">
+              <h5 class="card-title">SharpLingua</h5>
+              <p class="card-text">Programa para prática diária de inglês</p>
+              <a href="http://sharplingua.com" target="_blank" class="btn btn-warning">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white shadow-sm border border-warning">
+            <img src="/img/formiguerra.png" class="card-img-top" alt="Formiguerra">
+            <div class="card-body">
+              <h5 class="card-title">Formiguerra</h5>
+              <p class="card-text">Jogo de cartas contra o BOT</p>
+              <a href="http://formiguerra.zanondev.com" target="_blank"  class="btn btn-warning">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white shadow-sm border border-warning">
+            <img src="/img/sincrofacil.png" class="card-img-top" alt="SincroFácil">
+            <div class="card-body">
+              <h5 class="card-title">Sincro Fácil</h5>
+              <p class="card-text">Programa para auxiliar na elaboração dos horários escolares</p>
+              <a href="#" class="btn btn-warning">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white shadow-sm border border-warning">
+            <img src="/img/desafionumeros.png" class="card-img-top" alt="Desafio Números">
+            <div class="card-body">
+              <h5 class="card-title">Desafio dos Números</h5>
+              <p class="card-text">Jogo para tentar descobrir quais os números gerados (projeto piloto)</p>
+              <a href="#" class="btn btn-warning">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white shadow-sm border border-warning">
+            <img src="/img/browsertales.png" class="card-img-top" alt="Browser Tales">
+            <div class="card-body">
+              <h5 class="card-title">Browser Tales</h5>
+              <p class="card-text">RPG de Navegador , ainda em construção</p>
+              <a href="#" class="btn btn-warning disabled">Ver Projeto</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="project">
-      <a href="https://sharplingua.com" target="_blank"><img src="/img/sharplingua.png" alt="Projeto 2"></a>
-      <div class="project-info">
-        <h3>Sharp Lingua</h3>
-        <p>Programa para a prática diária de inglês</p>
-      </div>
-    </div>
-
-    <div class="project">
-      <a href="https://formiguerra.zanondev.com" target="_blank"><img src="/img/formiguerra.png" alt="Projeto 1"></a>
-      <div class="project-info">
-        <h3>FormiGuerra</h3>
-        <p>Jogo de cartas baseado no jogo ANTS: CARDS</p>
-      </div>
-    </div>
-
-    <div class="project">
-      <a href="https://desafionumeros.zanondev.com" target="_blank"><img src="/img/desafionumeros.png" alt="Projeto 1"></a>
-      <div class="project-info">
-        <h3>Desafio dos Números</h3>
-        <p>Tente descobrir quais os números gerados aleatoriamente por diversão</p>
-      </div>
-    </div>
-
-    <div class="project">
-      <a href="https://sincrofacil.zanondev.com" target="_blank"><img src="/img/sincrofacil.png" alt="Projeto 1"></a>
-      <div class="project-info">
-        <h3>Sincro Fácil</h3>
-        <p>Facilitador para quem elabora horários escolares, verifica horários que poderiam dar conflito ( Não FAZ o horário escolar!)</p>
-      </div>
-    </div>
-
-  </section>
-
-  <div class="placeholder" id="sobre">
-  </div>
-
-  <h2>Sobre</h2>
-    <section class="sobre">
-      <p>Olá, meu nome é Antonio Zanon e sou um desenvolvedor web apaixonado por criar soluções inovadoras. Tenho experiência em HTML, CSS, JavaScript e PHP, e estou sempre em busca de novos desafios para aprimorar minhas habilidades.</p>
-      <p>Se você está procurando um desenvolvedor dedicado e criativo, não hesite em entrar em contato!</p>
     </section>
 
-    <div class="placeholder" id="contato">
-    </div>
-    <h2>Contato</h2>
-      <section class="contato">
-        <p>antonio.zanon99@gmail.com</p>
-        <p>(41)99984-6082</p>
-        <div class="icons">
-          <a href="https://www.linkedin.com/in/antonio-zanon-4178a721a/" target="_blank" class="icon"><img src="/img/linkedin.png"></a>
-          <a href="https://github.com/toni50009" target="_blank" class="icon"><img src="/img/github.png"></a>
+    <section id="contato" class="bg-black text-white p-5 rounded-0 shadow-lg">
+        <h2 class="mt-5 mb-4 text-warning">Contato</h2>
+        <div class="contact-icons d-flex flex-wrap justify-content-center gap-4 mt-4">
+          <a href="https://github.com/toni50009" target="_blank" class="contact-item text-white text-decoration-none d-flex align-items-center gap-2">
+            <i class="bi bi-github fs-2"></i><span class="fs-5">/toni50009</span>
+          </a>
+          <a href="https://linkedin.com/in/antonio-zanon-4178a721a" target="_blank" class="contact-item text-white text-decoration-none d-flex align-items-center gap-2">
+            <i class="bi bi-linkedin fs-2"></i><span class="fs-5">/antonio-zanon</span>
+          </a>
+          <div class="contact-item text-white d-flex align-items-center gap-2">
+            <i class="bi bi-whatsapp fs-2"></i><span class="fs-5">(41) 99984-6082</span>
+          </div>
+          <div class="contact-item text-white d-flex align-items-center gap-2">
+            <i class="bi bi-envelope fs-2"></i><span class="fs-5">antonio.zanon99@gmail.com</span>
+          </div>
         </div>
-      </section>
+    </section>
+  </div>
 
-      <div class="botaovoltar">
-        <a href="#topo" class="botao">Voltar ao topo</a>
-      </div>
-  <footer style="text-align: center; margin-top: 5rem;">
-    <p>&copy; 2025 Zanon DEV. Todos os direitos reservados.</p>
-    <p>Desenvolvido por Antonio Zanon</p>
-  </footer>
+  <footer class="bg-black text-white text-center py-3">
+    <p>&copy; 2023 ZanonDev. Todos os direitos reservados.</p>
 </body>
 </html>

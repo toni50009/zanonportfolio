@@ -1,208 +1,91 @@
-:root {
-  --cor-fundo: #000000;     
-  --cor-texto: #f0f0f0;        
-  --cor-secundaria: #2e2e2e;  
-
-
-  --cor-destaque: #1a2a6c;     
-  --cor-contraste: #ffd700;   
-
-
-  --cor-borda: #444;          
+body{
+  margin:0;
+  padding:0;
+  font-family:Arial, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
+container-fluid.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-body {
-  margin: 0;
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-item:hover {
+  background-color: #ffc107;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-  scroll-behavior: smooth;
+  transition: background-color 0.3s ease;
 }
 
-
-.logo{
-  text-shadow: 0 0 5px rgba(201, 230, 13, 0.399), 0 0 10px rgba(163, 217, 16, 0.393), 0 0 15px rgba(220, 235, 15, 0.421);
-  font-size: 2rem;
+.hero {
+  height: 100vh;
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
+  padding-top: 80px; /* para compensar o header fixo */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
 }
 
-.logo a{
-  text-decoration: none;
-  color: var(--cor-contraste);
+.hero-title, .hero-subtitle {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
 }
 
-.logo:hover{
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
+.hero-title {
+  animation-delay: 0.5s;
 }
 
-h2, .title {
-  text-align: center;
-  color: var(--cor-texto);
-  margin-top: 3rem;
+.hero-subtitle {
+  animation-delay: 1s;
 }
 
-.title{
-  background-color: var(--cor-secundaria);
-}
-  
-  header {
-    background-color: black;
-    padding: 1rem;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    top: 0;
-    z-index: 20;
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-
-
-  nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-
-nav{
-  display: flex;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  padding: 1rem;
 }
 
-.objnav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem 1.5rem;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
-
-.objnav:hover{
-  background-color: var(--cor-contraste);
-  color: var(--cor-secundaria);
+.main{
+  padding-top: 50px;
 }
 
+.intro {
+  height: 700px;
+  background-image: url('/img/fundo.png');
+  gap: 20px;
+}
 
+#sobre, #projetos, #contato {
+  scroll-margin-top: 80px;
+}
 
-  .title {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 1.5rem auto 0 auto;
-    font-size: 3.5rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
-  }
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
 
-  .icons {
-    text-align: center;
-    margin: 1rem 0;
-    padding: 2rem;
-  }
+.contact-icons {
+  margin-top: 30px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 40px;
+}
 
-  .icon{
-    display: inline-block;
-    margin: 0 1rem;
-    border-radius: 50%;
-    padding: 1rem;
-    background-color: black;
-  }
+.contact-item i {
+  transition: color 0.3s ease;
+}
 
-  .icon:hover{
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
-  }
-  
-
-  h2 {
-    text-align: center;
-    color: var(--cor-contraste);
-    margin-top: 3rem;
-    font-family: var(--fonte-texto);
-
-  }
-
-  .projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 3rem;
-  }
-
-  .project {
-    width: 250px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 3px solid #f2c94c;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-
-  .project:hover {
-    transform: scale(1.2);
-  }
-
-  .project img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-
-  .project-info {
-    padding: 1rem;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.05);
-    height: 100%;
-    font-size: 0.9rem;
-    color: var(--cor-contraste);
-  }
-
-  .project-info h3 {
-    margin: 0.5rem 0;
-  }
-
-  .project-info p {
-    font-size: 0.9rem;
-    color: var(--cor-primaria);
-  }
-
-  section.sobre, section.contato, .botaovoltar {
-    text-align: center;
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-  }
-
-  .botao {
-    background-color: var(--cor-contraste);
-    color: var(--cor-fundo);
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-
-  .botao:hover {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
-    transform: scale(1.1);
-  }
-
-  .placeholder{
-    padding: 1.5rem;
-  }
+.contact-item:hover i {
+  color: #ffc107;
+}
