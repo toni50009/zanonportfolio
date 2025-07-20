@@ -1,7 +1,7 @@
-body{
-  margin:0;
-  padding:0;
-  font-family:Arial, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 container-fluid.no-gutter {
@@ -9,7 +9,7 @@ container-fluid.no-gutter {
   padding-right: 0;
 }
 
-header{
+header {
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -30,7 +30,8 @@ header{
   animation: fadeInUp 1s ease-out forwards;
 }
 
-.hero-title, .hero-subtitle {
+.hero-title,
+.hero-subtitle {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
 }
@@ -56,27 +57,29 @@ header{
   }
 }
 
-.main{
+.main {
   padding-top: 50px;
 }
 
 .intro {
   height: 700px;
-  background-image: url('/img/fundo.png');
+  background-image: url("/img/fundo.png");
   gap: 20px;
 }
 
-#sobre, #projetos, #contato {
+#sobre,
+#projetos,
+#contato {
   scroll-margin-top: 80px;
 }
 
 .card-img-top {
   height: 350px;
-
+  object-fit: cover;
 }
 
-.card{
-  height: 600;
+.card {
+  height: 600px;
   max-height: 600px;
 }
 
@@ -85,8 +88,7 @@ header{
   max-height: 200px;
 }
 
-
-.btn{
+.btn {
   position: relative;
 }
 
